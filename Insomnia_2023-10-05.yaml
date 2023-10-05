@@ -1,0 +1,179 @@
+_type: export
+__export_format: 4
+__export_date: 2023-10-05T09:27:18.599Z
+__export_source: insomnia.desktop.app:v8.2.0
+resources:
+  - _id: req_3b9385d86d93412faff2b1f3cdcac7fd
+    parentId: wrk_3922d638776649aea9c3739130138c58
+    modified: 1696497711769
+    created: 1696322408649
+    url: https://zzz02ohgi4.execute-api.eu-north-1.amazonaws.com/dev/product/261d9dc3-5780-4071-be34-b962f3fc9ba8
+    name: Update
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        			"price": "22999",
+        			"itemName": "Apple Macbook Air 15 inch - Updated"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_527d5411e0ef430a999ce007e2980333
+      - name: User-Agent
+        value: insomnia/8.1.0
+        id: pair_b137d787ce2c4e41a81e1ae58dfa7a17
+      - id: pair_883f0fee4b6740fc839884353ea1ed5b
+        name: authorizationToken
+        value: allow
+        description: ""
+    authentication: {}
+    metaSortKey: -1696322408649
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_3922d638776649aea9c3739130138c58
+    parentId: null
+    modified: 1696320512097
+    created: 1696320512097
+    name: Products-API-v2
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_48ebdbd6caa94593b6adecc4c4122848
+    parentId: wrk_3922d638776649aea9c3739130138c58
+    modified: 1696326362517
+    created: 1696322228247
+    url: https://zzz02ohgi4.execute-api.eu-north-1.amazonaws.com/dev/product/adac4b12-8d49-418b-bf59-229f4ee77c98
+    name: "Delete "
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.1.0
+        id: pair_033f050b2cbf46cd943fdcd98d195e2a
+      - id: pair_cbd08f15f1ad47d1ab3e729fb14e6a4b
+        name: authorizationToken
+        value: allow
+        description: ""
+    authentication: {}
+    metaSortKey: -1696322228247
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f5688bcfeb5a4c3cae43008e8259ee95
+    parentId: wrk_3922d638776649aea9c3739130138c58
+    modified: 1696497732306
+    created: 1696321891411
+    url: https://zzz02ohgi4.execute-api.eu-north-1.amazonaws.com/dev/product/bdcc1979-3801-418f-9076-721a5413b147
+    name: Read - {itemId}
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.1.0
+    authentication: {}
+    metaSortKey: -1696321891411
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6a43e93e3eec4ec2b65e437992ee134e
+    parentId: wrk_3922d638776649aea9c3739130138c58
+    modified: 1696497617703
+    created: 1696321256462
+    url: https://zzz02ohgi4.execute-api.eu-north-1.amazonaws.com/dev/product
+    name: Create an Item
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        			"price": "3299",
+        			"itemName": "Apple Airpods Pro 2nd Gen"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_68a879539fb749e2a62e3129fdc5deb4
+      - name: User-Agent
+        value: insomnia/8.1.0
+        id: pair_653c809ebc0e446ebf8d2fbd22acc90c
+      - id: pair_0ee19f0fe14d4108992fccaaac5fc639
+        name: authorizationToken
+        value: allow
+        description: ""
+    authentication: {}
+    metaSortKey: -1696321256462
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c5182d41532448aa9f89bc30cc1695ae
+    parentId: wrk_3922d638776649aea9c3739130138c58
+    modified: 1696322126838
+    created: 1696320520666
+    url: https://zzz02ohgi4.execute-api.eu-north-1.amazonaws.com/dev/products
+    name: Read - All products
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.1.0
+    authentication: {}
+    metaSortKey: -1696320520666
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_bd2f48eedcaaf35e0310b7204ee5ec782bdc1f7a
+    parentId: wrk_3922d638776649aea9c3739130138c58
+    modified: 1696320512098
+    created: 1696320512098
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1696320512098
+    _type: environment
+  - _id: jar_bd2f48eedcaaf35e0310b7204ee5ec782bdc1f7a
+    parentId: wrk_3922d638776649aea9c3739130138c58
+    modified: 1696320512100
+    created: 1696320512100
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
